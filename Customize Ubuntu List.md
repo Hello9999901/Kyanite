@@ -1,15 +1,16 @@
 ```bash
 Applications:
-	Zoom
-	Firefox w/ Dracula & Nightreader
-	Blender
-	dConf Editor
-	Tweaks
-	Spotify
+	Zoom \/
+	Firefox w/ Dracula & Nightreader 
+	Blender \/
+	dConf Editor \/
+	Tweaks \/
+	Spotify (X)
+	PulseEffects \/
 Optionals:
 	Razer Software
-  Piper
-  Nvidia Drivers?
+  	Piper
+  	Nvidia Drivers?
 ```
 
 ```bash
