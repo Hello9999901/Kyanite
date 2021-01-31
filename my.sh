@@ -70,7 +70,7 @@ sudo snap install blender --classic
 
 # INSTALL PULSEEFFECTS
 sudo add-apt-repository ppa:mikhailnov/pulseeffects
-
+sudo apt install pulseaudio pulseeffects --install-recommends
 
 #––––––––––––––––––––––––––––––––––––
 
