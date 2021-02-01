@@ -112,7 +112,9 @@ gsettings set org.gnome.desktop.peripherals.mouse natural-scroll true
 echo "Mouse Scroll Direction Changed"
 
 # CHANGE WALLPAPER
-# gsettings set org.gnome.desktop.background picture-uri 'file:///home/byran/Desktop/Razer%20Neon.jpeg'
+cd Pictures
+wget https://github.com/Hello9999901/Customized-Ubuntu/raw/main/Media/abstract-smoke.jpg
+gsettings set org.gnome.desktop.background picture-uri 'file:///home/byran/Pictures/abstract-smoke.jpg'
 #––––––––––––––––––––––––––––––––––––
 
 if [ "$installRazer" = true ]
