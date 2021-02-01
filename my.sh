@@ -1,5 +1,12 @@
 #!/usr/bin/env bash
 
+# INITIATE COLORED TEXT OUTPUT
+
+red=`tput setaf 1`
+green=`tput setaf 2`
+reset=`tput sgr0`
+bold=`tput bold`
+
 #–––––––––OPTION SELECTIONS––––––––––
 
 if [ ${1:-pass} = "-r" ]
@@ -51,7 +58,7 @@ sudo apt-get upgrade
 
 # CLI TOOLS
 echo "Installing git wget snapd cmatrix"
-sudo apt install git wget snapd cmatrix dconf-cli dconf-editor gnome-tweak-tool zip unzip
+sudo apt install git wget snapd cmatrix dconf-cli dconf-editor gnome-tweak-tool zip unzip gnome-shell-extension-autohidetopbar
 echo "Adding apt-repository universe"
 sudo add-apt-repository universe
 
@@ -112,9 +119,19 @@ gsettings set org.gnome.desktop.peripherals.mouse natural-scroll true
 echo "Mouse Scroll Direction Changed"
 
 # CHANGE WALLPAPER
+echo "Changing Wallpaper"
 cd Pictures
 wget https://github.com/Hello9999901/Customized-Ubuntu/raw/main/Media/abstract-smoke.jpg
 gsettings set org.gnome.desktop.background picture-uri 'file:///home/byran/Pictures/abstract-smoke.jpg'
+
+# CHANGE MIN, MAX, CLOSE POSITION FROM RIGHT TO LEFT
+echo "Changing Position of Window (Close, Min, Max) Buttons From Right to Left"
+gsettings set org.gnome.desktop.wm.preferences button-layout close,minimize,maximize:
+
+# REBOOT (MUST BE LAST STEP)
+echo "REBOOT"
+sudo reboot
+
 #––––––––––––––––––––––––––––––––––––
 
 if [ "$installRazer" = true ]
