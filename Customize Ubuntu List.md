@@ -29,5 +29,7 @@ Settings:
 	Mouse Natural Scrolling
 	Touchpad Natural Scrolling
 	Terminal Keyboard Shortcuts
+	Sets Wallpaper 
+	(Photo by https://unsplash.com/@nick_rickert?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Nick Rickert on https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash)
 ```
 
