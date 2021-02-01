@@ -111,11 +111,10 @@ then
     sudo apt-get upgrade
 
     # CLI TOOLS
-    echo -e "${green}${bold}\n\nInstalling git, wget, snapd, cmatrix, dconf-cli, dconf-editor, gnome-tweak-tool, zip, unzip, autohidetopbar and hwinfo\n\n"
-    sudo apt install git wget snapd cmatrix dconf-cli dconf-editor gnome-tweak-tool zip unzip gnome-shell-extension-autohidetopbar hwinfo
+    echo -e "${green}${bold}\n\nInstalling git, wget, snapd, cmatrix, dconf-cli, dconf-editor, gnome-tweak-tool, zip, unzip, autohidetopbar, ffmpeg and hwinfo\n\n"
+    sudo apt install git wget snapd cmatrix dconf-cli dconf-editor gnome-tweak-tool zip unzip gnome-shell-extension-autohidetopbar hwinfo ffmpeg
     echo -e "${green}${bold}\n\nAdding apt-repository universe\n\n"
     sudo add-apt-repository universe
-
 
     # INSTALL ZOOM
     echo -e "${green}${bold}\n\nInstalling Zoom\n\n"
@@ -135,6 +134,10 @@ then
 
     # INSTALL VISUAL STUDIO CODE
     sudo snap install code --classic
+
+    # INSTALL OBS
+    sudo add-apt-repository ppa:obsproject/obs-studio
+    sudo apt install obs-studio
 
     # INSTALL THEMES
         # INSTALL APPS THEME

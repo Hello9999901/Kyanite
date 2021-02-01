@@ -16,6 +16,7 @@ Smaller Applications/CLI Applications
 	gnome-tweak-tool 
 	zip 
 	unzip 
+	ffmpeg
 	autohidetopbar
 	hwinfo
 Optionals:
