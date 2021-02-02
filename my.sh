@@ -97,6 +97,7 @@ then
     installSwitchgraphics=false
     normalInstall=false
     echo "Help stuff"
+fi
 
 #–––––––––––BEGIN PROCESS––––––––––––
 
