@@ -105,6 +105,33 @@ fi
 
 if [ "$normalInstall" = true ]
 then
+    echo -e "${green}${bold}\n\nAre you SURE you want to install all the application and utilities listed in the README.md? (Yes/No)"
+    read install
+    if [ "$install" = "Yes" ]
+    then
+        true
+    else
+        exit
+    if [ "$installRazer" = true ]
+    then
+        echo -e "${green}${bold}\n\nInstalling Razer Selected (Polychromatic)\n\n"
+    fi
+    if [ "$installPiper" = true ]
+    then
+        echo -e "${green}${bold}\n\nInstalling Piper Gaming Mouse Selected\n\n"
+    fi
+    if [ "$installPiper" = true ]
+    then
+        echo -e "${green}${bold}\n\nInstalling Piper Gaming Mouse Selected\n\n"
+    fi
+    if [ "$installSwitchgraphics" = true ]
+    then
+        echo -e "${green}${bold}\n\nInstalling System76 GPU Switching Selected\n\n"
+    fi
+    if [ "$installNvidiaDrivers" = true ]
+    then
+        echo -e "${green}${bold}\n\Install Nvidia Drivers Selected\n\n"
+    fi
     # UPDATE AND UPGRADE
     echo -e "${green}${bold}\n\nUpdating\n\n"
     sudo apt-get update
@@ -243,5 +270,7 @@ then
 fi
 
 # REBOOT (MUST BE LAST STEP)
+if [ "$normalInstall" = true ]
 echo -e "${green}${bold}\n\nREBOOTING\n\n"
 sudo reboot
+fi
