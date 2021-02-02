@@ -112,6 +112,7 @@ then
         true
     else
         exit
+    fi
     if [ "$installRazer" = true ]
     then
         echo -e "${green}${bold}\n\nInstalling Razer Selected (Polychromatic)\n\n"
@@ -130,7 +131,7 @@ then
     fi
     if [ "$installNvidiaDrivers" = true ]
     then
-        echo -e "${green}${bold}\n\Install Nvidia Drivers Selected\n\n"
+    echo -e "${green}${bold}\n\Install Nvidia Drivers Selected\n\n"
     fi
     # UPDATE AND UPGRADE
     echo -e "${green}${bold}\n\nUpdating\n\n"
@@ -270,7 +271,11 @@ then
 fi
 
 # REBOOT (MUST BE LAST STEP)
-if [ "$normalInstall" = true ]
+echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
+read reboot
+if [ "$reboot" = "Yes" ]
 echo -e "${green}${bold}\n\nREBOOTING\n\n"
 sudo reboot
+else
+echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
 fi
