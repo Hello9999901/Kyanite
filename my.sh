@@ -115,23 +115,24 @@ then
     fi
     if [ "$installRazer" = true ]
     then
-        echo -e "${green}${bold}\n\nInstalling Razer Selected (Polychromatic)\n\n"
+        echo -e "${green}${bold}\n\nWill Install Razer Selected (Polychromatic)\n\n"
+    fi
+    if [ "$installPiper" = true ]
+    then
+        echo -e "${green}${bold}\n\nWill Install Piper Gaming Mouse Selected\n\n"
     fi
     if [ "$installPiper" = true ]
     then
         echo -e "${green}${bold}\n\nInstalling Piper Gaming Mouse Selected\n\n"
-    fi
-    if [ "$installPiper" = true ]
-    then
-        echo -e "${green}${bold}\n\nInstalling Piper Gaming Mouse Selected\n\n"
+        echo -e "${green}${bold}\n\nWill Install Piper Gaming Mouse Selected\n\n"
     fi
     if [ "$installSwitchgraphics" = true ]
     then
-        echo -e "${green}${bold}\n\nInstalling System76 GPU Switching Selected\n\n"
+        echo -e "${green}${bold}\n\nWill Install System76 GPU Switching Selected\n\n"
     fi
     if [ "$installNvidiaDrivers" = true ]
     then
-    echo -e "${green}${bold}\n\Install Nvidia Drivers Selected\n\n"
+    echo -e "${green}${bold}\n\nWill Install Nvidia Drivers Selected\n\n"
     fi
     # UPDATE AND UPGRADE
     echo -e "${green}${bold}\n\nUpdating\n\n"
@@ -289,6 +290,7 @@ then
     echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
     read reboot
     if [ "$reboot" = "Yes" ]
+    then
         echo -e "${green}${bold}\n\nREBOOTING\n\n"
         sudo reboot
     else
@@ -296,3 +298,4 @@ then
     fi
 else
     true
+fi
