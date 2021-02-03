@@ -123,7 +123,6 @@ then
     fi
     if [ "$installPiper" = true ]
     then
-        echo -e "${green}${bold}\n\nInstalling Piper Gaming Mouse Selected\n\n"
         echo -e "${green}${bold}\n\nWill Install Piper Gaming Mouse Selected\n\n"
     fi
     if [ "$installSwitchgraphics" = true ]
