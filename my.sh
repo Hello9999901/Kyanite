@@ -274,8 +274,8 @@ fi
 echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
 read reboot
 if [ "$reboot" = "Yes" ]
-echo -e "${green}${bold}\n\nREBOOTING\n\n"
+    echo -e "${green}${bold}\n\nREBOOTING\n\n"
 sudo reboot
 else
-echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
+    echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
 fi
