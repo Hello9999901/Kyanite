@@ -153,18 +153,25 @@ then
     rm -rf zoom_amd64.deb
     cd
 
+    # INSTALL BARRIER
+    echo -e "${green}${bold}\n\nInstalling Barrier\n\n"
+    sudo snap install barrier
+
     # INSTALL BLENDER
     echo -e "${green}${bold}\n\nInstalling Blender\n\n"
     sudo snap install blender --classic
 
     # INSTALL PULSEEFFECTS
+    echo -e "${green}${bold}\n\nInstalling PulseEffects\n\n"
     sudo add-apt-repository ppa:mikhailnov/pulseeffects
     sudo apt install pulseaudio pulseeffects --install-recommends
 
     # INSTALL VISUAL STUDIO CODE
+    echo -e "${green}${bold}\n\nInstalling VSCode\n\n"
     sudo snap install code --classic
 
     # INSTALL OBS
+    echo -e "${green}${bold}\n\nInstalling OBS\n\n"
     sudo add-apt-repository ppa:obsproject/obs-studio
     sudo apt install obs-studio
 
@@ -173,13 +180,15 @@ then
     echo -e "${green}${bold}\n\nInstalling Flat-Remix-GTK Application Themes\n\n"
     sudo add-apt-repository ppa:daniruiz/flat-remix
     sudo apt install flat-remix-gtk
+    gsettings set org.gnome.desktop.interface gtk-theme 'Flat-Remix-GTK-Blue-Dark-Solid'
 
         # INSTALL CURSOR THEME
     echo -e "${green}${bold}\n\nInstalling WhiteSur-cursor Theme\n\n"
     cd Downloads
     git clone https://github.com/vinceliuice/WhiteSur-cursors.git
     cd WhiteSur-cursors
-    ./install.sh
+    sudo ./install.sh
+    gsettings set org.gnome.desktop.interface cursor-theme 'WhiteSur-cursors'
     cd
 
         # INSTALL GNOME TERMIANL THEME
@@ -224,6 +233,10 @@ then
     mv 'WhiteSur-gtk-theme/src/other/firefox/chrome/' 'Downloads/'
     rm -rf WhiteSur-gtk-theme
     mv Downloads chrome
+
+    # AUTO-HIDE DOCK
+    echo -e "${green}${bold}\n\Auto-hide the Dock\n\n"
+    gsettings set org.gnome.shell.extensions.dash-to-dock dock-fixed false
 fi
 
 #––––––––––––OPTIONAL INSTALLS––––––––––––––
@@ -275,7 +288,7 @@ echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
 read reboot
 if [ "$reboot" = "Yes" ]
     echo -e "${green}${bold}\n\nREBOOTING\n\n"
-sudo reboot
+    sudo reboot
 else
     echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
 fi
