@@ -287,8 +287,13 @@ fi
 echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
 read reboot
 if [ "$reboot" = "Yes" ]
-    echo -e "${green}${bold}\n\nREBOOTING\n\n"
-    sudo reboot
+    if [ "$normalInstall" = false ]
+    then
+        true
+    else
+        echo -e "${green}${bold}\n\nREBOOTING\n\n"
+        sudo reboot
+    fi
 else
-    echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)"
+    echo -e "${green}${bold}\n\nThank You for Using Byran Technologies Applications! Please Restart to Your Closest Convenience."
 fi
