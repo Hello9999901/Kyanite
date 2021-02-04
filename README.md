@@ -3,12 +3,12 @@
 > ### My custom Bash script for customizing Ubuntu to my liking. Feel free to change it up to however you like. This is geared mainly towards the Razer Blade Stealth 13". 
 
 ### Usage:
-#### In terminal, run `./my.sh` to run it. 
-#### `./my.sh -r` will install Polychromatic (Razer Software). 
-#### `./my.sh -p` will install Piper, a GUI utility that changes gaming mice settings.
-#### `./my.sh -switchgraphics` will install System76's GPU switcher utility. 
-#### `./my.sh -nd` will install the latest NVidia drivers (Buggy and may complicate/mess up driver install)
-#### `./my.sh -h` will return the help documentation (not a lot as of right now).
+##### In terminal, run `./my.sh` to run it. 
+##### `./my.sh -r` will install Polychromatic (Razer Software). 
+##### `./my.sh -p` will install Piper, a GUI utility that changes gaming mice settings.
+##### `./my.sh -switchgraphics` will install System76's GPU switcher utility. 
+##### `./my.sh -nd` will install the latest NVidia drivers (Buggy and may complicate/mess up driver install)
+##### `./my.sh -h` will return the help documentation (not a lot as of right now).
 
 ## Utilities/Apps It Installs:
 
