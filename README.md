@@ -1,6 +1,6 @@
 # Customized-Ubuntu
 
-### My custom Bash script for customizing Ubuntu to my liking. Feel free to change it up to however you like. This is geared mainly towards the Razer Blade Stealth 13". 
+> ### My custom Bash script for customizing Ubuntu to my liking. Feel free to change it up to however you like. This is geared mainly towards the Razer Blade Stealth 13". 
 
 ### Usage:
 #### In terminal, run `./my.sh` to run it. 
@@ -63,7 +63,7 @@ Settings:
 	Mouse Natural Scrolling
 	Touchpad Natural Scrolling
 	Sets Wallpaper 
-	(Photo by https://unsplash.com/@eberhardgross?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText eberhard grossgasteiger on https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText Unsplash)
+	(Photo by [eberhard grossgasteiger]:(https://unsplash.com/@eberhardgross?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash]:(https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText))
 ```
 
 
