@@ -11,7 +11,7 @@
 #### `./my.sh -h` will return the help documentation (not a lot as of right now).
 
 ## Utilities/Apps It Installs:
- ```bash
+
 Applications:
 	Zoom
 	Blender
@@ -37,9 +37,7 @@ Optionals:
   	Piper
   	Nvidia Drivers
 	System76 Power Package (Switching Between dGPU and iGPU)
-```
 
-```bash
 Themes:
 	Applications: Flat-Remix-GTK-Blue-Dark
 	Cursor: WhiteSur-Cursors
@@ -47,9 +45,7 @@ Themes:
 	Sound: Yaru
 	Gnome Terminal: Dracula Theme
 	Firefox: WhiteSur-firefox (Only Downloads into Downloads Folder, Must Install Manually)
-```
 
-```bash
 Settings:
 	Dock Changes
 		Extend Height: False
@@ -63,7 +59,7 @@ Settings:
 	Mouse Natural Scrolling
 	Touchpad Natural Scrolling
 	Sets Wallpaper 
-	(Photo by [eberhard grossgasteiger]:(https://unsplash.com/@eberhardgross?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash]:(https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText))
-```
+	Photo by [eberhard grossgasteiger](https://unsplash.com/@eberhardgross?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+
 
 
