@@ -1,4 +1,4 @@
-# I need a name for my script (So far it's called Kyanite, but it used to be called Customized-Ubuntu)
+# Kyanite
 
 > ### My custom Bash script for customizing Ubuntu to my liking. Feel free to change it up to however you like. This is geared mainly towards the Razer Blade Stealth 13". 
 
