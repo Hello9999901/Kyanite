@@ -1,4 +1,4 @@
-# Kyanite
+# Kyanite - Inject Ubuntu With Charm
 
 > ### My custom Bash script for customizing Ubuntu to my liking. Feel free to change it up to however you like. This is geared mainly towards the Razer Blade Stealth 13". 
 
