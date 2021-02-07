@@ -6,12 +6,12 @@
 > #### This script should work in any Ubuntu based OS (ElementaryOS, Zorin, POP!\_OS, Ubuntu Budgie)
 
 ### Usage:
-##### In terminal, run `./my.sh` to run it. 
-##### `./my.sh -r` will install Polychromatic (Razer Software). 
-##### `./my.sh -p` will install Piper, a GUI utility that changes gaming mice settings.
-##### `./my.sh -switchgraphics` will install System76's GPU switcher utility. 
-##### `./my.sh -nd` will install the latest Nvidia drivers (Buggy and may complicate/mess up driver install)
-##### `./my.sh -h` will return the help documentation (not a lot as of right now).
+##### In terminal, run `./inject.sh` to run it. 
+##### `./inject.sh -r` will install Polychromatic (Razer Software). 
+##### `./inject.sh -p` will install Piper, a GUI utility that changes gaming mice settings.
+##### `./inject.sh -switchgraphics` will install System76's GPU switcher utility. 
+##### `./inject.sh -nd` will install the latest Nvidia drivers (Buggy and may complicate/mess up driver install)
+##### `./inject.sh -h` will return the help documentation (not a lot as of right now).
 
 ## Utilities/Apps It Installs:
 
@@ -63,8 +63,7 @@
 	* Changes Minimize, Maximize and Close Button Position from Right to Left
 	* Mouse Natural Scrolling
 	* Touchpad Natural Scrolling
-	* Sets Wallpaper 
-	Photo by [eberhard grossgasteiger](https://unsplash.com/@eberhardgross?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)
+	* Sets Wallpaper [Photo by [eberhard grossgasteiger](https://unsplash.com/@eberhardgross?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText) on [Unsplash](https://unsplash.com/images/stock/non-copyrighted?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)]
 
 
 
