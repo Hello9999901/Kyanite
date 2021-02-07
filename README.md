@@ -1,5 +1,7 @@
 # Kyanite - Inject Ubuntu With Charm
 
+<img src="/Media/Logos/Kyanite-Banner.pdf" alt="Kyanite Banner" width="75%"/>
+
 > ### My custom Bash script for customizing Ubuntu to my liking. Feel free to change it up to however you like. This is geared mainly towards the Razer Blade Stealth 13". 
 > #### This script should work in any Ubuntu based OS (ElementaryOS, Zorin, POP!\_OS, Ubuntu Budgie)
 
