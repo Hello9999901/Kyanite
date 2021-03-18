@@ -236,7 +236,7 @@ then
     echo -e "${green}${bold}\n\nChanging Wallpaper\n\n${reset}"
     cd Pictures
     wget https://github.com/Hello9999901/Customized-Ubuntu/raw/main/Media/abstract-smoke.jpg
-    gsettings set org.gnome.desktop.background picture-uri 'file:///home/byran/Pictures/abstract-smoke.jpg'
+    gsettings set org.gnome.desktop.background picture-uri 'file://~/Pictures/abstract-smoke.jpg'
     cd
     draw_progress_bar 86
 
@@ -270,7 +270,7 @@ then
     draw_progress_bar 0
     echo -e "${green}${bold}\n\nInstalling Razer Software (Polychromatic)\n\n${reset}"
     # Install Linux-Headers
-    sudo apt install linux-headers-5.8.0-41-lowlatency
+    sudo apt install linux-headers-5.8.0-45-lowlatency
     draw_progress_bar 30
     # Install OpenRazer Daemon
     sudo add-apt-repository ppa:openrazer/stable
