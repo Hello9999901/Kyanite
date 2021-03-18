@@ -236,7 +236,7 @@ then
     echo -e "${green}${bold}\n\nChanging Wallpaper\n\n${reset}"
     cd Pictures
     wget https://github.com/Hello9999901/Customized-Ubuntu/raw/main/Media/abstract-smoke.jpg
-    gsettings set org.gnome.desktop.background picture-uri 'file:///home/byran/Pictures/abstract-smoke.jpg'
+    gsettings set org.gnome.desktop.background picture-uri 'file://~/Pictures/abstract-smoke.jpg'
     cd
     draw_progress_bar 86
 
