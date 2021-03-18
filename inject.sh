@@ -270,7 +270,7 @@ then
     draw_progress_bar 0
     echo -e "${green}${bold}\n\nInstalling Razer Software (Polychromatic)\n\n${reset}"
     # Install Linux-Headers
-    sudo apt install linux-headers-5.8.0-41-lowlatency
+    sudo apt install linux-headers-5.8.0-45-lowlatency
     draw_progress_bar 30
     # Install OpenRazer Daemon
     sudo add-apt-repository ppa:openrazer/stable
