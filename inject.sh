@@ -28,7 +28,7 @@ elif [ ${1:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -48,7 +48,7 @@ elif [ ${2:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -68,7 +68,7 @@ elif [ ${3:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -88,7 +88,7 @@ elif [ ${4:-pass} = "-nd" ]
 then
     installNvidiaDrivers=true
     normalInstall=true
-else 
+else
     normalInstall=true
 fi
 
@@ -140,60 +140,60 @@ then
 
     # UPDATE AND UPGRADE
     echo -e "${green}${bold}\n\nUpdating\n\n${reset}"
-    sudo apt-get update
+    sudo apt-get -y update
     draw_progress_bar 3
     echo -e "${green}${bold}\n\nUpgrading\n\n${reset}"
-    sudo apt-get upgrade
+    sudo apt-get -y upgrade
     draw_progress_bar 7
 
     # CLI TOOLS
     echo -e "${green}${bold}\n\nInstalling git, wget, snapd, cmatrix, dconf-cli, dconf-editor, gnome-tweak-tool, zip, unzip, autohidetopbar, ffmpeg and hwinfo\n\n${reset}"
     sudo apt install git wget snapd cmatrix dconf-cli dconf-editor gnome-tweak-tool zip unzip gnome-shell-extension-autohidetopbar hwinfo ffmpeg
     echo -e "${green}${bold}\n\nAdding apt-repository universe\n\n${reset}"
-    sudo add-apt-repository universe
+    sudo add-apt-repository -y universe
     draw_progress_bar 10
 
     # INSTALL ZOOM
     echo -e "${green}${bold}\n\nInstalling Zoom\n\n${reset}"
     cd ~/Downloads/
     wget https://zoom.us/client/latest/zoom_amd64.deb
-    sudo apt install ./zoom_amd64.deb
+    sudo apt install -y ./zoom_amd64.deb
     rm -rf zoom_amd64.deb
     cd
     draw_progress_bar 21
 
     # INSTALL BARRIER
     echo -e "${green}${bold}\n\nInstalling Barrier\n\n${reset}"
-    sudo snap install barrier
+    sudo snap install -y barrier
     draw_progress_bar 27
 
     # INSTALL BLENDER
     echo -e "${green}${bold}\n\nInstalling Blender\n\n${reset}"
-    sudo snap install blender --classic
+    sudo snap install -y blender --classic
     draw_progress_bar 32
 
     # INSTALL PULSEEFFECTS
     echo -e "${green}${bold}\n\nInstalling PulseEffects\n\n${reset}"
-    sudo add-apt-repository ppa:mikhailnov/pulseeffects
-    sudo apt install pulseaudio pulseeffects --install-recommends
+    sudo add-apt-repository -y ppa:mikhailnov/pulseeffects
+    sudo apt install -y pulseaudio pulseeffects --install-recommends
     draw_progress_bar 40
 
     # INSTALL VISUAL STUDIO CODE
     echo -e "${green}${bold}\n\nInstalling VSCode\n\n${reset}"
-    sudo snap install code --classic
+    sudo snap install -y code --classic
     draw_progress_bar 51
 
     # INSTALL OBS
     echo -e "${green}${bold}\n\nInstalling OBS\n\n${reset}"
-    sudo add-apt-repository ppa:obsproject/obs-studio
-    sudo apt install obs-studio
+    sudo add-apt-repository -y ppa:obsproject/obs-studio
+    sudo apt install -y obs-studio
     draw_progress_bar 63
 
     # INSTALL THEMES
         # INSTALL APPS THEME
     echo -e "${green}${bold}\n\nInstalling Flat-Remix-GTK Application Themes\n\n${reset}"
-    sudo add-apt-repository ppa:daniruiz/flat-remix
-    sudo apt install flat-remix-gtk
+    sudo add-apt-repository -y ppa:daniruiz/flat-remix
+    sudo apt install -y flat-remix-gtk
     gsettings set org.gnome.desktop.interface gtk-theme 'Flat-Remix-GTK-Blue-Dark-Solid'
 
         # INSTALL CURSOR THEME
@@ -270,7 +270,7 @@ then
     draw_progress_bar 0
     echo -e "${green}${bold}\n\nInstalling Razer Software (Polychromatic)\n\n${reset}"
     # Install Linux-Headers
-    sudo apt install linux-headers-5.8.0-45-lowlatency
+    sudo apt install -y linux-headers-5.8.0-45-lowlatency
     draw_progress_bar 30
     # Install OpenRazer Daemon
     sudo add-apt-repository ppa:openrazer/stable
@@ -292,7 +292,7 @@ then
     setup_scroll_area
     draw_progress_bar 0
     echo -e "${green}${bold}\n\nInstalling Piper Gaming Mouse Software\n\n${reset}"
-    sudo apt install piper
+    sudo apt install -y piper
     draw_progress_bar 100
     destroy_scroll_area
 fi
@@ -304,9 +304,9 @@ then
     setup_scroll_area
     draw_progress_bar 0
     echo -e "${green}${bold}\n\nInstalling System76 GPU Switching Software\n\n${reset}"
-    sudo apt-add-repository ppa:system76-dev/stable
+    sudo apt-add-repository -y ppa:system76-dev/stable
     draw_progress_bar 50
-    sudo apt install gnome-shell-extension-system76-power system76-power
+    sudo apt install -y gnome-shell-extension-system76-power system76-power
     draw_progress_bar 100
     destroy_scroll_area
 fi
@@ -324,7 +324,7 @@ then
 fi
 
 # REBOOT (MUST BE LAST STEP)
-if [ "$normalInstall" = true ] 
+if [ "$normalInstall" = true ]
 then
     echo -e "${green}${bold}\n\nDo you want to reboot now? (Yes/No)${reset}"
     read reboot
